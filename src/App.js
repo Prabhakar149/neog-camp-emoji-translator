@@ -2,7 +2,7 @@ import "./styles.css";
 import { useState } from "react";
 
 export default function App() {
-  var [emojiMeaning, setEmojiMeaning] = useState("");
+  var [emojiMeaning, setEmojiMeaning] = useState("meaning of emoji will be here");
 
   const emojis = {
     "🎅": "Christmas",
@@ -42,8 +42,7 @@ export default function App() {
         style={{ width: "70%", height: "2rem" }}
         onChange={emojiInputHandle}
       ></input>
-      <h3>{emojiMeaning}</h3>
-      <h2>emojis we know</h2>
+      <h2>{emojiMeaning}</h2>
       {knownEmojis.map((emoji) => {
         return (
           <span
